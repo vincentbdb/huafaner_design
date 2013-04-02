@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>花范儿</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/jquery-1.7.1.min.js"></script>
+<script language="javascript" src="js/layout.js"></script>
+<script language="javascript" src="js/jquery.jqtransform.js"></script>
+<script language="javascript">
+	$(function(){
+		$('form').jqTransform({imgPath:'images'});
+	});
+</script>
+</head>
+
+<body>
+<!-- 网站头部 -->
+<div class="header_top">
+    <div class="header">
+        <div class="logo"><a href="index.html"><img src="images/logo.jpg"  alt="花范儿" title="花范儿" /></a></div>
+        <div class="top_banner"><img src="images/banner.jpg" /></div>
+    </div>
+</div>
+<!-- 菜单导航 -->
+<div class="nav">
+	<div class="nav_login">
+        <ul class="nav_more">
+            <li class=""><a href="index.html">首页</a></li>
+            <li class="nav_line"></li>
+            <li class="nav_s"><a href="那些花.html">那些花</a></li>
+            <li class="nav_s"><a href="那些花搜索.html">花束和瓶花</a></li>
+            <li class="nav_s selected"><a href="列表.html">故事订花</a></li>
+            <li class="nav_s"><a href="#">其他</a></li>
+            <li class="nav_line"></li>
+            <li><a href="专题活动.html">专题活动</a></li>
+            <li class="nav_line"></li>
+            <li><a href="#">花范儿故事</a></li>
+        </ul>
+        <div class="tel"><img src="images/tel.gif" alt="010-64361192" title="010-64361192" /></div>
+        <div class="login" style="display:none;"><a href="注册.html">注册</a><span class="point"></span><a href="登录.html">登录</a></div>
+        <div class="login pos_re">
+        	<div class="logins">您好，张先生</div>
+        	<div class="logininfo">
+                <ul>
+                    <li><a href="个人资料.html">个人资料</a></li>
+                    <li><a href="我的订单.html">我的订单</a></li>
+                    <li><a href="收花人地址1.html">收花地址</a></li>
+                    <li><a href="我的礼券.html">我的礼券</a></li>
+                    <li><a href="#">我的最爱</a></li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 订单信息 -->
+<div class="ind_main">
+	<h1>确认您的订单</h1>
+	<div class="detailed_info">
+    <form>
+	<div class="info">
+    	<div class="order line_ser">
+            <h4>收花人信息</h4>
+            <div class="info_content">
+            	<ul>
+                	<li class="seltectradio"><input name="radio" type="radio" value="" id="a1" class="inputcheckbox" /><label for="a1">高玮，北京，北京市，朝阳区，朝外大街甲6号万通中心D座，100020，18600092829</label></li>
+                    <li class="seltectradio"><input name="radio" type="radio" value="" id="a2" class="inputshow inputcheckbox" /><label for="a2">创建新的收花人信息</label></li>
+                </ul>
+                <div class="clearer"></div>
+                <dl class="form_list">
+                  <dd><label for="b1">称谓*</label><input name="" type="text" id="b1" class="inputtext sty160" /><div class="form_error">收花人是要有名字的</div></dd>
+               	  <dd><label for="b1">姓名*</label><input name="" type="text" id="b1" class="inputtext sty160" /><div class="form_error">收花人是要有名字的</div></dd>
+                  <dd><label for="b2">省市区县*</label>
+                    	<select name="" class="">
+                          <option>请选择省</option>
+                          <option>北京</option>
+                          <option>天津</option>
+                        </select>
+                        <select name="" class="">
+                          <option>请选择市</option>
+                        </select>
+                        <select name="" class="">
+                          <option>请选择区</option>
+                        </select>
+                        <div class="form_error mar_l">地址信息不能为空</div>
+                    </dd>
+                    <dd><label for="b2">详细地址*</label><input name="" type="text" class="inputtext sty360" /><div class="form_error">地址信息不能为空</div></dd>
+                    <dd><label for="b3">联系电话*</label><input name="" type="text" id="b3" class="inputtext sty160" /><div class="form_error">我们需要收花人的电话联系TA</div></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="order line_ser">
+            <h4>选择卡片</h4>
+            <div class="info_content porel">
+            	<ul>
+                	<li class="seltectradio"><input name="radio3" type="radio" value="" id="c1" class="greet_none" /><label for="c1">不需要卡片</label></li>
+                    <li class="seltectradio"><input name="radio3" type="radio" value="" id="c2" class="greet_replace" /><label for="c2">我要一张空白卡片</label></li>
+                    <li class="seltectradio"><input name="radio3" type="radio" value="" id="c3" class="greet_n" /><label for="c3">我要一张代写卡片</label></li>
+                </ul>
+                <div class="greeting_n">
+                	<p>输入卡片留言:</p>
+                    <p><textarea name="" class="inputtext hw70"></textarea></p>
+                </div>
+                <div class="greeting_replace">
+                	<img src="images/greeting.gif" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="order line_ser">
+            <h4>支付方式</h4>
+            <div class="info_content">
+            	
+                <ul>
+                	<li class="seltectradio"><input id="f1" name="radio2" type="radio" value="" class="bank_list" /><label for="f1">网银支付</label><span class="">(您需要有一张开通网上支付功能的银行卡)</span></li>
+                </ul>
+                
+            	<dl class="input_list bankpays">
+                <div class="bankpays">
+                    <ul class="bank">
+                        <h5>我们支持以下银行的在线支付：</h5>
+                        <li class="bankpay bank_card bank_card_gs" title="工商银行"></li>
+                        <li class="bankpay bank_card bank_card_js" title="建设银行"></li>
+                        <li class="bankpay bank_card bank_card_ny" title="农业银行"></li>
+                        <li class="bankpay bank_card bank_card_yz" title="邮政储蓄"></li>
+                        <li class="bankpay bank_card bank_card_zg" title="中国银行"></li>
+                        <li class="bankpay bank_card bank_card_jt" title="交通银行"></li>
+                        <li class="bankpay bank_card bank_card_zs" title="招商银行"></li>
+                        <li class="bankpay bank_card bank_card_gd" title="光大银行"></li>
+                        <li class="bankpay bank_card bank_card_pf" title="浦发银行"></li>
+                        <li class="bankpay bank_card bank_card_hx" title="华夏银行"></li>
+                        <li class="bankpay bank_card bank_card_gf" title="广发银行"></li>
+                        <li class="bankpay bank_card bank_card_zx" title="中信银行"></li>
+                        <li class="bankpay bank_card bank_card_xy" title="兴业银行"></li>
+                        <li class="bankpay bank_card bank_card_sf" title="深发银行"></li>
+                        <li class="bankpay bank_card bank_card_ms" title="民生银行"></li>
+                        <li class="bankpay bank_card bank_card_hz" title="杭州银行"></li>
+                        <li class="bankpay bank_card bank_card_sh" title="上海银行"></li>
+                        <li class="bankpay bank_card bank_card_nb" title="宁波银行"></li>
+                        <li class="bankpay bank_card bank_card_pa" title="平安银行"></li>                
+                    </ul>
+                    <ul class="webpay">
+                        <h5>我们支持以下支付平台：</h5>
+                        <li class="bankpay pay pay_card_yb" title="易宝支付"></li>         
+                  </ul>
+                </div>
+                </dl>
+                <ul>
+                	<li class="seltectradio"><input id="f2" name="radio2" type="radio" value="" class="bank_none" /><label for="f2">货到付款</label><span class=""> (您需要在收货时向送货员支付订单款项)</span></li>
+                </ul>
+                
+                <ul>
+                	<li class="seltectradio"><input id="f3" name="radio2" type="radio" value="" class="bankpay_list" /><label for="f3">银行转账</label><span class="">(您需要先去银行转账，我们收到货款后才能将货发出)</span></li>
+                </ul>
+                <dl class="input_list bankpay_con">
+                <div class="bankpay_con">
+                <ul class="bank">
+                    <h5>您在银行汇款时请在电汇单的用途栏内注明订单号：</h5>
+                    <table class="wireframe">
+                      <tr>
+                        <td class="text_cen">账户姓名</td>
+                        <td class="text_left">高玮玮</td>
+                        <td class="text_left">高玮玮</td>
+                      </tr>
+                      <tr>
+                        <td class="text_cen">账     号</td>
+                        <td class="text_left">6226 0901 0257 3389</td>
+                        <td class="text_left">6216 6101 0000 8810 133</td>
+                      </tr>
+                      <tr>
+                        <td class="text_cen">开 户 行</td>
+                        <td class="text_left">招商银行北京分行大运村支行</td>
+                        <td class="text_left">中国银行北京分行</td>
+                      </tr>
+                    </table>
+                </ul>
+                </div>
+                </dl>
+            </div>
+          </div>
+        </div>
+        
+        <div class="order line_ser">
+            <h4>确认商品</h4>
+            <div class="info_content ">
+            	<dl class="input_list">
+                	<table class="list_info">
+                    	    <tr>
+                    	      <th class="line_ser">商品</th>
+                    	      <th class="line_ser">产品描述</th>
+                    	      <th class="line_ser">价格</th>
+                    	      <th class="line_ser">数量</th>
+                    	      <th class="line_ser">小计</th>
+                  	      </tr>
+                    	    <tr>
+                    	      <td><span><img src="images/a7.jpg" /></span></td>
+                    	      <td>勇气</td>
+                    	      <td>￥99.0</td>
+                    	      <td>1</td>
+                    	      <td>￥99.0</td>
+                  	      </tr>
+           	      </table>
+                </dl>
+          </div>
+          <div class="submit">
+            <ol class="submit_l">
+                <li><label><span>期望送达日期</span></label>
+                    <input type="text" class="inputtext sty180" value="请输入期望的送达时间" />
+                </li>
+            </ol>
+    	</div>
+        </div>
+        
+        <div class="order line_ser">
+          <div class="submit">
+            <ol class="submit_l">
+                <li><label><h4>使用礼券</h4></label>
+                    <select name="" class="sty360">
+                      <option>请选择礼券</option>
+                    </select>
+                    <a href="#" class="btnj_n">使用</a>
+                    <a href="#" class="btnj_y">使用</a>
+                </li>
+              <li>
+                    <label><h4>备    注</h4></label><input type="text" class="inputtext sty180" value="关于颜色，花材的要求" />
+              </li>
+            </ol>
+            <ol class="submit_r">
+                <li><label>优惠：</label><p>￥-30.0</p></li>
+                <li><label>商品小计：</label><p>￥-20.0</p></li>
+                <li><label>您共需支付：</label><p class="green ft_18">￥89.0</p></li>
+            </ol>
+    	</div>
+        </div>
+        
+        
+        
+        <div class="buys mat_b20">
+          <a href="确认成功.html" class="sty113"><p>提交订单</p></a></div>
+        
+    </div>
+    </form>
+    </div>
+</div>
+<div class="clearer"></div>
+<!-- 网站底部 -->
+<div class="footer">
+	<div class="wevvice_con">
+        <div class="service line_ser">
+            <ul class="us">
+            	<h3 class="ser_tit line_ser">联系我们</h3>
+                <li class="while">工作时间9:00--18:00</li>
+                <li class="qq">2475252675</li>
+                <li class="phone">010-64361192</li>
+                <li class="email">service@huafaner.com</li>
+            </ul>
+            <ul class="promise">
+            	<h3 class="ser_tit line_ser">我们承诺</h3>
+                <li>
+                	<p class="pm_a1"></p>
+                    <div>资深花艺师经典设计</div>
+                </li>
+                <li>
+                	<p class="pm_a2"></p>
+                    <div>100%新鲜优质花材</div>
+                </li>
+                <li>
+                	<p class="pm_a3"></p>
+                	<div>全新设计每月上市</div>
+                </li>
+            </ul>
+            <ul class="attention">
+            	<h3 class="ser_tit line_ser">关注我们</h3>
+                <li><a href="#" class="ser_sina">关注新浪微博</a></li>
+                <li><a href="#" class="ser_weixin">关注微信</a></li>
+                <li><a href="#" class="ser_ddian">关注点点博客</a></li>
+            </ul>
+        </div>
+        
+        <div class="service">
+        	<dl>
+            	<dt><img src="images/bot_logo.gif" /></dt>
+                <dd class="bot_line"><a href="#">Iphone客户端下载</a></dd>
+                <dd class="bot_line"><a href="#">关于花范儿</a></dd>
+                <dd class="bot_line"><a href="服务条款.html">服务条款</a></dd>
+                <dd class=""><a href="#">友情链接</a></dd>
+            </dl>
+        </div>
+        <div class="service_copy">
+        	uafaner.com &copy;  2011-2012 All Rights Resered<br />
+            www.huafaner.com 京ICP备12035699号
+        </div>
+	</div>
+</div>
+
+</body>
+
+</html>

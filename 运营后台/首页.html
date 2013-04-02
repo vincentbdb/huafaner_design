@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/jquery-1.7.1.min.js"></script>
+<script language="javascript" src="js/Library-min.js"></script>
+<script language="javascript" src="js/layout.js"></script>
+</head>
+
+<body>
+<!-- 网站头部 -->
+<div class="header">
+  <div class="logo">
+    	<img src="images/logo.jpg" />
+    	<h1>花范儿业务管理系统</h1>
+    </div>
+    <div class="login">您好，<b>高玮玮</b>，欢迎使用花范儿业务管理系统！<span><a href="index.html">【退出登录】</a></span></div>
+</div>
+<!-- 网站主体 -->
+<div class="bodymain">
+	<!-- 左侧菜单 -->
+	<div class="main_left">
+    	<dl>
+        	<dt>商品管理</dt>
+            <dd><a href="发布商品.html">发布商品</a></dd>
+            <dd><a href="维护商品.html">维护商品</a></dd>
+            <dd><a href="维护商品分类.html">维护商品分类</a></dd>
+            <dd><a href="维护保养说明.html">维护保养说明</a></dd>
+            <dd><a href="维护订购说明.html">维护订购说明</a></dd>
+            <dd><a href="维护商品标签.html">维护商品标签</a></dd>
+        </dl>
+        <dl>
+        	<dt>专题管理</dt>
+            <dd><a href="发布专题.html">发布专题</a></dd>
+            <dd><a href="发布活动.html">发布活动</a></dd>
+            <dd><a href="维护专题.html">维护专题</a></dd>
+            <dd><a href="维护活动.html">维护活动</a></dd>
+        </dl>
+        <dl>
+        	<dt>会员管理</dt>
+            <dd><a href="会员查询.html">会员查询</a></dd>
+        </dl>
+        <dl>
+        	<dt>详单管理</dt>
+            <dd><a href="详单查询.html">详单查询</a></dd>
+            <dd><a href="修改订单.html">修改订单</a></dd>
+        </dl>
+        <dl>
+        	<dt>优惠券管理</dt>
+            <dd><a href="优惠券发放.html">优惠券发放</a></dd>
+            <dd><a href="优惠券查询.html">优惠券查询</a></dd>
+        </dl>
+        <dl>
+        	<dt>页面管理</dt>
+            <dd class="sel"><a href="首页.html">首页</a></dd>
+            <dd><a href="专题活动页.html">专题活动页</a></dd>
+        </dl>
+    </div>
+    <!-- 右侧内容 -->
+    <div class="main_right">
+    	<div class="title">
+        	<h2>首页维护</h2>
+        	<span class="btn_top">
+            	<input type="button" value="预 览" class="loginbtn" />
+            	<input type="button" value="提 交" class="loginbtn" />
+            </span>
+        </div>
+        <div class="content">
+        	<div class="block">
+            	<h3>导航维护</h3>
+                <div class="imgpic sty500">
+                	<a href="javascript:void(0)" onclick="Popup.popping('add_pic',true)">点击上传图片</a>
+                </div>
+            </div>
+            <div class="clearer"></div>
+            <div class="block">
+            	<h3>海报维护</h3>
+                <div class="poster">
+                    <div class="imgpic sty500">
+                        <a href="javascript:void(0)" onclick="Popup.popping('add_poster',true)">点击上传海报</a>
+                    </div>
+                    <div class="operating">
+                        <input type="button" value="增加海报" class="loginbtn" onclick="Popup.popping('',true)" />
+                        <input type="button" value="删除此海报" class="loginbtn" onclick="Popup.popping('del_poster',true)" />
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                    </div>
+                </div>
+                <div class="poster">
+                    <div class="imgpic sty500">
+                        <a href="javascript:void(0)" onclick="Popup.popping('add_poster',true)">点击上传海报</a>
+                    </div>
+                    <div class="operating">
+                        <input type="button" value="增加海报" class="loginbtn" onclick="Popup.popping('',true)" />
+                        <input type="button" value="删除此海报" class="loginbtn" onclick="Popup.popping('del_poster',true)" />
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                    </div>
+                </div>
+            </div>
+            <div class="clearer"></div>
+            <div class="block">
+            	<h3>最新设计</h3>
+                <div class="new_design">
+                    <div class="imgpic sty300">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_poster',true)">点击上传</a>
+                    </div>
+                    <div class="imgpic sty300">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_poster',true)">点击上传</a>
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="file_com">
+                    <div class="imgpic sty196">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_com',true)">点击上传</a>
+                    </div>
+                    <div class="mobile">
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />                    
+                    </div>
+                </div>
+                <div class="file_com">
+                    <div class="imgpic sty196">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_com',true)">点击上传</a>
+                    </div>
+                    <div class="mobile">
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />                    
+                    </div>
+                </div>
+                <div class="file_com">
+                    <div class="imgpic sty196">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_com',true)">点击上传</a>
+                    </div>
+                    <div class="mobile">
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />                    
+                    </div>
+                </div>
+            </div>
+            <div class="clearer"></div>
+            <div class="block">
+            	<h3>经典热卖</h3>
+                <div class="new_design">
+                    <div class="imgpic sty300">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_poster',true)">点击上传</a>
+                    </div>
+                    <div class="imgpic sty300">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_poster',true)">点击上传</a>
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="file_com">
+                    <div class="imgpic sty196">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_com',true)">点击上传</a>
+                    </div>
+                    <div class="mobile">
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />                    
+                    </div>
+                </div>
+                <div class="file_com">
+                    <div class="imgpic sty196">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_com',true)">点击上传</a>
+                    </div>
+                    <div class="mobile">
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />                    
+                    </div>
+                </div>
+                <div class="file_com">
+                    <div class="imgpic sty196">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_com',true)">点击上传</a>
+                    </div>
+                    <div class="mobile">
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />                    
+                    </div>
+                </div>
+                <div class="clearer"></div>
+                <div class="file_com">
+                    <div class="imgpic sty196">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_com',true)">点击上传</a>
+                    </div>
+                    <div class="mobile">
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />                    
+                    </div>
+                </div>
+                <div class="file_com">
+                    <div class="imgpic sty196">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_com',true)">点击上传</a>
+                    </div>
+                    <div class="mobile">
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />                    
+                    </div>
+                </div>
+                <div class="file_com">
+                    <div class="imgpic sty196">
+                        <a href="javascript:void(0)" onclick="Popup.popping('file_com',true)">点击上传</a>
+                    </div>
+                    <div class="mobile">
+                        <input type="button" value="前 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />
+                        <input type="button" value="后 移" class="loginbtn" onclick="Popup.popping('forward_poster',true)" />                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearer"></div>
+        <div class="btn_submit">
+            <input type="button" value="预 览" class="loginbtn" />
+            <input type="button" value="提 交" class="loginbtn" />
+        </div>
+    </div>
+</div>
+
+
+<!-- 弹出层 导航维护 -->
+<div class="popping sty500" id="add_pic" style="display:none;">
+	<div class="popping_title">
+    	<h2>导航维护</h2>
+        <div class="closed" onclick="Popup.closed('add_pic')"><a href="javascript:void(0)">×</a></div>
+    </div>
+    <div class="popping_content">
+    	 <div class="con_list"><span class="pop_tit">选择文件：</span><p><input name="" class="" type="file" /></p></div>
+         
+        <div class="pop_submit">
+            <input type="button" value="上 传" class="loginbtn" onclick="Popup.closed('add_pic')" />
+            <input type="button" value="取 消" class="loginbtn" onclick="Popup.closed('add_pic')" />
+        </div>
+    </div>
+</div>
+<!-- 弹出层 上传海报 -->
+<div class="popping sty500" id="add_poster" style="display:none;">
+	<div class="popping_title">
+    	<h2>上传海报</h2>
+        <div class="closed" onclick="Popup.closed('add_poster')"><a href="javascript:void(0)">×</a></div>
+    </div>
+    <div class="popping_content">
+    	 <div class="con_list"><span class="pop_tit">选择文件：</span><p><input name="" class="" type="file" /></p></div>
+         
+        <div class="pop_submit">
+            <input type="button" value="上 传" class="loginbtn" onclick="Popup.closed('add_poster')" />
+            <input type="button" value="取 消" class="loginbtn" onclick="Popup.closed('add_poster')" />
+        </div>
+    </div>
+</div>
+<!-- 弹出层 删除海报 -->
+<div class="popping sty350" id="del_poster" style="display:none;">
+	<div class="popping_title">
+    	<h2>删除海报</h2>
+        <div class="closed" onclick="Popup.closed('del_poster')"><a href="javascript:void(0)">×</a></div>
+    </div>
+    <div class="pop_infocon">
+        	<h3>你确定是要删除此海报么？</h3>
+        </div>
+     
+    <div class="pop_submit_con">
+        <input type="button" value="确 定" class="loginbtn" onclick="Popup.closed('del_poster')" />
+        <input type="button" value="取 消" class="loginbtn" onclick="Popup.closed('del_poster')" />
+    </div>
+</div>
+<!-- 弹出层 移动前后 -->
+<div class="popping sty350" id="forward_poster" style="display:none;">
+	<div class="popping_title">
+    	<h2>上移</h2>
+        <div class="closed" onclick="Popup.closed('forward_poster')"><a href="javascript:void(0)">×</a></div>
+    </div>
+    <div class="popping_content">
+    	 <div class="status">
+         	<div class="img_icon"><img src="images/icon1.gif" /></div>
+            <div class="popping_content">
+            	<h3>您确定是将此位置上移一个么？</h3> 
+                <div class="pop_submit pad_none">
+                    <input type="button" value="确 定" class="loginbtn" onclick="Popup.closed('forward_poster')" />
+                    <input type="button" value="取 消" class="loginbtn" onclick="Popup.closed('forward_poster')" />
+                </div>
+            </div>
+         </div>
+    </div>
+    
+    <div class="popping_title">
+    	<h2>上移成功</h2>
+        <div class="closed" onclick="Popup.closed('forward_poster')"><a href="javascript:void(0)">×</a></div>
+    </div>
+    <div class="popping_content">
+            <div class="pop_infocon">
+                <h3>此海报已经上移成功！</h3>
+            </div>
+            <div class="pop_submit_con">
+                <input type="button" value="确 定" class="loginbtn" onclick="Popup.closed('forward_poster')" />
+                <input type="button" value="取 消" class="loginbtn" onclick="Popup.closed('forward_poster')" />
+            </div>
+    </div>
+</div>
+<!-- 弹出层 上传小海报 -->
+<div class="popping sty600" id="file_poster" style="display:none;">
+	<div class="popping_title">
+    	<h2>上传小海报</h2>
+        <div class="closed" onclick="Popup.closed('file_poster')"><a href="javascript:void(0)">×</a></div>
+    </div>
+     <div class="content">
+        <div class="con_list"><span class="con_tit">上传图片：</span><p><input name="" class="" type="file" /></p></div>
+        <div class="con_list"><span class="con_tit">图片描述：</span><p><input name="" class="same" type="text" /></p></div>
+        <div class="con_list">
+        	<span class="con_tit">选择商品：</span>
+        	<div class="pad_l120">
+            	<div class="sel_com">
+                	<input name="" type="radio" value="" />
+                    <div class="img_com"><img src="images/1.jpg" /></div>
+                </div>
+                <div class="sel_com">
+                	<input name="" type="radio" value="" />
+                    <div class="img_com"><img src="images/1.jpg" /></div>
+                </div>
+                <div class="sel_com">
+                	<input name="" type="radio" value="" />
+                    <div class="img_com"><img src="images/1.jpg" /></div>
+                </div>
+                <div class="sel_com">
+                	<input name="" type="radio" value="" />
+                    <div class="img_com"><img src="images/1.jpg" /></div>
+                </div>
+                <div class="sel_com">
+                	<input name="" type="radio" value="" />
+                    <div class="img_com"><img src="images/1.jpg" /></div>
+                </div>
+                <div class="sel_com">
+                	<input name="" type="radio" value="" />
+                    <div class="img_com"><img src="images/1.jpg" /></div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="pop_submit_con">
+        <input type="button" value="确 定" class="loginbtn" onclick="Popup.closed('file_poster')" />
+        <input type="button" value="取 消" class="loginbtn" onclick="Popup.closed('file_poster')" />
+    </div>
+</div>
+<!-- 弹出层 商品上传 -->
+<div class="popping sty500" id="file_com" style="display:none;">
+	<div class="popping_title">
+    	<h2>商品上传</h2>
+        <div class="closed" onclick="Popup.closed('file_com')"><a href="javascript:void(0)">×</a></div>
+    </div>
+    <div class="pop_infocon">
+    	<ul>
+        	<li>商品</li>
+            <li>商品</li>
+            <li>商品</li>
+        </ul>
+        <div class="clearer"></div>
+        <div class="pad_20">
+        	<div class="sel_com wid33">
+                <input name="" type="radio" value="" />
+                <div class="img_com"><img src="images/1.jpg" /></div>
+            </div>
+            <div class="sel_com wid33">
+                <input name="" type="radio" value="" />
+                <div class="img_com"><img src="images/1.jpg" /></div>
+            </div>
+            <div class="sel_com wid33">
+                <input name="" type="radio" value="" />
+                <div class="img_com"><img src="images/1.jpg" /></div>
+            </div>
+            <div class="sel_com wid33">
+                <input name="" type="radio" value="" />
+                <div class="img_com"><img src="images/1.jpg" /></div>
+            </div>
+            <div class="sel_com wid33">
+                <input name="" type="radio" value="" />
+                <div class="img_com"><img src="images/1.jpg" /></div>
+            </div>
+            <div class="sel_com wid33">
+                <input name="" type="radio" value="" />
+                <div class="img_com"><img src="images/1.jpg" /></div>
+            </div>
+            </div>
+        </div>
+     <div class="clearer"></div>
+    <div class="pop_submit_con">
+        <input type="button" value="确 定" class="loginbtn" onclick="Popup.closed('file_com')" />
+        <input type="button" value="取 消" class="loginbtn" onclick="Popup.closed('file_com')" />
+    </div>
+</div>
+</body>
+</html>

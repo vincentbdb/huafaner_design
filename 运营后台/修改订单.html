@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改订单</title>
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/jquery-1.7.1.min.js"></script>
+<script language="javascript" src="js/Library-min.js"></script>
+<script language="javascript" src="js/layout.js"></script>
+</head>
+
+<body>
+<!-- 网站头部 -->
+<div class="header">
+  <div class="logo">
+    	<img src="images/logo.jpg" />
+    	<h1>花范儿业务管理系统</h1>
+    </div>
+    <div class="login">您好，<b>高玮玮</b>，欢迎使用花范儿业务管理系统！<span><a href="index.html">【退出登录】</a></span></div>
+</div>
+<!-- 网站主体 -->
+<div class="bodymain">
+	<!-- 左侧菜单 -->
+	<div class="main_left">
+    	<dl>
+        	<dt>商品管理</dt>
+            <dd><a href="发布商品.html">发布商品</a></dd>
+            <dd><a href="维护商品.html">维护商品</a></dd>
+            <dd><a href="维护商品分类.html">维护商品分类</a></dd>
+            <dd><a href="维护保养说明.html">维护保养说明</a></dd>
+            <dd><a href="维护订购说明.html">维护订购说明</a></dd>
+            <dd><a href="维护商品标签.html">维护商品标签</a></dd>
+        </dl>
+        <dl>
+        	<dt>专题管理</dt>
+            <dd><a href="发布活动.html">发布专题</a></dd>
+            <dd><a href="发布活动.html">发布活动</a></dd>
+            <dd><a href="维护专题.html">维护专题</a></dd>
+            <dd><a href="维护活动.html">维护活动</a></dd>
+        </dl>
+        <dl>
+        	<dt>会员管理</dt>
+            <dd><a href="会员查询.html">会员查询</a></dd>
+        </dl>
+        <dl>
+        	<dt>详单管理</dt>
+            <dd><a href="详单查询.html">详单查询</a></dd>
+            <dd class="sel"><a href="修改订单.html">修改订单</a></dd>
+        </dl>
+        <dl>
+        	<dt>优惠券管理</dt>
+            <dd><a href="优惠券发放.html">优惠券发放</a></dd>
+            <dd><a href="优惠券查询.html">优惠券查询</a></dd>
+        </dl>
+        <dl>
+        	<dt>页面管理</dt>
+            <dd><a href="首页.html">首页</a></dd>
+            <dd><a href="专题活动页.html">专题活动页</a></dd>
+        </dl>
+    </div>
+    <!-- 右侧内容 -->
+    <div class="main_right">
+    	<div class="title"><h2>修改订单</h2></div>
+        <div class="content bot_b">
+        	<div class="con_list pad_n"><span class="con_tit">订单编号：</span><p>201211120001</p></div>
+            <div class="con_list pad_n"><span class="con_tit">订单编号：</span><p>未支付/已支付未确认/已确认/正在配花/正在配送/交易成功/交易取消</p></div>
+            <div class="con_list pad_n"><span class="con_tit">订单状态：</span><p>网站 / APP</p></div>
+            <div class="speed">
+              	<div class="no5"></div>
+                <dl>
+                	<dd class="speed_select">提交订单<p>2012-11-12 14:45:00</p></dd>
+                    <dd class="speed_select">完成支付<p>2012-11-12 14:45:00</p></dd>
+                    <dd class="speed_select">订单确认<p>2012-11-12 14:45:00</p></dd>
+                    <dd class="speed_select">订单发货<p>2012-11-12 14:45:00</p></dd>
+                    <dd>订单完成/取消<p>2012-11-12 14:45:00</p></dd>
+                </dl>
+              </div>
+        </div>
+        <div class="content bot_b">
+        	<div class="con_list"><span class="con_tit">收花人姓名：</span><p><input name="" class="same" type="text" /></p><div class="error">收花人姓名不能为空！</div></div>
+            <div class="con_list"><span class="con_tit">收花人地址：</span>
+            	<p>
+            		<select id="" name="">
+                    	<option value="北京" selected="">北京</option>
+                    </select>
+            	</p>
+                <p>
+            		<select id="" name="">
+                    	<option value="请选择地区">请选择地区</option>
+                        <option value="朝阳区" selected="">朝阳区</option>
+                        <option value="海淀区">海淀区</option>
+                    </select>
+            	</p>
+                <p><input name="" class="same" type="text" /></p>
+                <div class="error">收花人地址不能为空！</div></div>
+            <div class="con_list"><span class="con_tit">收花人邮编：</span><p><input name="" class="same" type="text" /></p><div class="error">收花人邮编不能为空！</div></div>
+            <div class="con_list"><span class="con_tit">收花人电话：</span><p><input name="" class="same" type="text" /></p><div class="error">收花人电话不能为空！</div></div>
+        </div>
+        <div class="content bot_b">
+        	<div class="con_list pad_n"><span class="con_tit">订花人姓名：</span><p>高玮玮</p></div>
+            <div class="con_list pad_n"><span class="con_tit">会员账号：</span><p>sssssss@163.com</p></div>
+            <div class="con_list pad_n"><span class="con_tit">手机号：</span><p>186999829899</p></div>
+        </div>
+        <div class="content bot_b">
+        	<div class="con_list pad_n"><span class="con_tit">商品名称：</span><p>商品名称商品名称</p></div>
+            <div class="con_list pad_n"><span class="con_tit">商品分类：</span><p>故事订花</p></div>
+            <div class="pad_l120"><img src="images/1.jpg"></div>
+        </div>
+        <div class="content bot_b">
+        	<div class="con_list"><span class="con_tit">送花日期：</span><p><input name="" class="same" type="text" /></p><div class="error">送花日期不能为空！</div></div>
+            <div class="con_list"><span class="con_tit">卡片类型：</span>
+            	<p>
+            		<select id="" name="">
+                    	<option value="请选择">请选择</option>
+                        <option value="需要一张空白卡片" selected="">需要一张空白卡片</option>
+                        <option value="需要一张手写卡片">需要一张手写卡片</option>
+                        <option value="不需要卡片">不需要卡片</option>
+                    </select>
+            	</p>
+            </div>
+            <div class="con_list"><span class="con_tit">卡片内容：</span><p><textarea name="" cols="" rows="" class="textarea"></textarea></p><div class="error">卡片内容不能为空！</div></div>
+            <div class="con_list"><span class="con_tit">落款：</span><p><input name="" class="same" type="text" /></p><label for="a2"><input name="" class="inputcheckbox"id="a2" type="checkbox" value="" />匿名送花</label></div>
+            <div class="con_list"><span class="con_tit">订单备注：</span><p><textarea name="" cols="" rows="" class="textarea"></textarea></p></div>
+        </div>
+        <div class="content">
+            <div class="con_list pad_n"><span class="con_tit">商品金额：</span><p>560</p></div>
+            <div class="con_list pad_n"><span class="con_tit">优惠券ID：</span><p>19237812973</p></div>
+            <div class="con_list pad_n"><span class="con_tit">优惠券金额：</span><p>30.0</p></div>
+            <div class="con_list pad_n"><span class="con_tit">订单金额：</span><p>530</p></div>
+            <div class="con_list"><span class="con_tit">实付金额：</span><p><input name="" class="same" type="text" /></p><div class="error">金额不能为空/金额格式不正确！</div></div>
+            <div class="con_list pad_n"><span class="con_tit">付款方式：</span><p>易宝支付，工商银行</p></div>
+        </div>
+        <div class="btn_submit">
+            	<input type="button" value="保 存" class="loginbtn" />
+                <input type="button" value="返 回" class="loginbtn" />
+            </div>
+        </div>
+         
+    </div>   
+</div>
+
+</body>
+</html>
